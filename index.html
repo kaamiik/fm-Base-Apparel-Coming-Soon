@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="container__header">
+          <img
+            src="/images/logo.svg"
+            alt="Base Apparel Logo"
+            class="container__logo"
+          />
+        </header>
+
+        <aside class="container__aside">
+          <picture class="container__picture">
+            <source
+              srcset="/images/hero-desktop.jpg"
+              media="(min-width:800px)"
+            />
+            <img
+              src="/images/hero-mobile.jpg"
+              alt="Person in orange shirt with obscured face, standing in front of a plant, touching their hair"
+            />
+          </picture>
+        </aside>
+
+        <main class="container__content">
+          <h1 class="container__heading">We're <em>coming soon</em></h1>
+          <p class="container__text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="container__form" novalidate>
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="container__input"
+            />
+            <button type="submit" class="container__cta">
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
+            <p class="container__error--message hidden">
+              Please provide a valid email
+            </p>
+            <img
+              src="images/icon-error.svg"
+              alt=""
+              class="container__error--icon hidden"
+            />
+          </form>
+        </main>
+
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Kamran Kiani</a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
