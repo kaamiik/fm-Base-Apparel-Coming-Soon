@@ -275,6 +275,7 @@ footer {
     margin-top: revert;
     max-width: calc(445 / var(--font-size) * 1rem);
     align-self: center;
+    margin-top: calc(120 / var(--font-size) * 1rem);
   }
 
   .container__heading {
