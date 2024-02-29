@@ -274,7 +274,7 @@ footer {
     grid-area: main-content;
     margin-top: revert;
     max-width: calc(445 / var(--font-size) * 1rem);
-    align-self: end;
+    align-self: center;
   }
 
   .container__heading {
