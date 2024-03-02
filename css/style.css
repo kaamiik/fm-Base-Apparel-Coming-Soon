@@ -169,7 +169,6 @@ body {
 .container__form--wrapper {
   display: grid;
   grid-template-columns: 1fr auto;
-  position: relative;
   outline: 1px solid transparent;
 }
 
@@ -201,11 +200,9 @@ body {
   background: var(--gradient2);
   border: none;
   border-radius: 28px;
-  padding: 0 2em;
+  padding: 0 2rem;
   box-shadow: 0 15px 20px 0 hsla(0, 43%, 60%, 24.76%);
-  position: absolute;
-  height: 100%;
-  right: 0;
+  margin-left: calc(-76 / var(--font-size) * 1rem);
 }
 
 .container__error--icon {
@@ -302,7 +299,6 @@ footer {
   }
 
   .container__form {
-    /* max-width: calc(445 / var(--font-size) * 1rem); */
     margin-top: calc(40 / var(--font-size) * 1rem);
   }
 
