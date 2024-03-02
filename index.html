@@ -56,15 +56,18 @@
             and our launch deals.
           </p>
           <form class="container__form" novalidate>
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="container__input"
-            />
-            <button type="submit" class="container__cta">
-              <span class="sr-only">Submit</span
-              ><img src="images/icon-arrow.svg" alt="" />
-            </button>
+            <div class="container__form--wrapper">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="container__input"
+                aria-invalid="false"
+              />
+              <button type="submit" class="container__cta">
+                <span class="sr-only">Submit</span
+                ><img src="images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
             <p class="container__error--message hidden">
               Please provide a valid email
             </p>

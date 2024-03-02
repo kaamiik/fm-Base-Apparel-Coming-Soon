@@ -161,19 +161,34 @@ body {
   line-height: calc(22 / 14);
   color: var(--primary-desaturated-red);
 }
-
 .container__form {
   margin-top: 2rem;
   position: relative;
 }
 
+.container__form--wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  position: relative;
+  outline: 1px solid transparent;
+}
+
+.container__form--wrapper:focus-within {
+  outline-color: blue;
+  border-radius: 28px;
+}
+
+.container__form--wrapper:has(input[aria-invalid="true"]) {
+  outline-color: var(--primary-soft-red);
+}
+
 .container__input {
-  width: calc(311 / var(--font-size) * 1rem);
   padding: calc(11 / var(--font-size) * 1rem) 0
     calc(9 / var(--font-size) * 1rem) calc(24 / var(--font-size) * 1rem);
   background-color: transparent;
   border: 1px solid var(--primary-desaturated-red);
   border-radius: 28px;
+  outline: 0;
 }
 
 .container__input::placeholder {
@@ -183,24 +198,20 @@ body {
 }
 
 .container__cta {
-  position: absolute;
-  top: -1px;
-  right: -2px;
   background: var(--gradient2);
   border: none;
   border-radius: 28px;
-  width: 64px;
-  height: 47px;
-  display: grid;
-  place-content: center;
+  padding: 0 2em;
   box-shadow: 0 15px 20px 0 hsla(0, 43%, 60%, 24.76%);
-  z-index: 2;
+  position: absolute;
+  height: 100%;
+  right: 0;
 }
 
 .container__error--icon {
   position: absolute;
   top: 13px;
-  right: 75px; /* Based on button width and a little gap 64px + 11px */
+  right: 80px; /* Based on button width and a little gap 64px + 11px */
 }
 
 .container__error--message {
@@ -291,11 +302,11 @@ footer {
   }
 
   .container__form {
+    /* max-width: calc(445 / var(--font-size) * 1rem); */
     margin-top: calc(40 / var(--font-size) * 1rem);
   }
 
   .container__input {
-    width: calc(445 / var(--font-size) * 1rem);
     padding: calc(15 / var(--font-size) * 1rem) 0
       calc(13 / var(--font-size) * 1rem) calc(32 / var(--font-size) * 1rem);
     color: var(--neutral-dark-grayish-red);
@@ -307,8 +318,7 @@ footer {
   }
 
   .container__cta {
-    width: 100px;
-    height: 57px;
+    padding: 0 3em;
   }
 
   .container__cta:hover,

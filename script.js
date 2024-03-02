@@ -15,8 +15,7 @@ function validateEmail(email) {
 function changeStyle() {
   errorEl.classList.remove("hidden");
   errorIconEl.classList.remove("hidden");
-  emailEl.style.borderColor = "var(--primary-soft-red)";
-  emailEl.style.borderWidth = "2px";
+  emailEl.setAttribute("aria-invalid", "true");
 }
 
 formEl.addEventListener("submit", function (e) {
@@ -35,5 +34,6 @@ formEl.addEventListener("submit", function (e) {
     e.target.submit();
     errorEl.classList.add("hidden");
     errorIconEl.classList.add("hidden");
+    emailEl.setAttribute("aria-invalid", "false");
   }
 });
