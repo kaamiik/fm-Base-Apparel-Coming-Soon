@@ -170,6 +170,9 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   outline: 1px solid transparent;
+  border: 1px solid var(--primary-desaturated-red);
+  border-radius: 28px;
+  overflow: hidden;
 }
 
 .container__form--wrapper:focus-within {
@@ -185,8 +188,7 @@ body {
   padding: calc(11 / var(--font-size) * 1rem) 0
     calc(9 / var(--font-size) * 1rem) calc(24 / var(--font-size) * 1rem);
   background-color: transparent;
-  border: 1px solid var(--primary-desaturated-red);
-  border-radius: 28px;
+  border: 0;
   outline: 0;
 }
 
@@ -202,7 +204,6 @@ body {
   border-radius: 28px;
   padding: 0 2rem;
   box-shadow: 0 15px 20px 0 hsla(0, 43%, 60%, 24.76%);
-  margin-left: calc(-76 / var(--font-size) * 1rem);
 }
 
 .container__error--icon {
