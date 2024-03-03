@@ -315,7 +315,7 @@ footer {
   }
 
   .container__cta {
-    padding: 0 3em;
+    padding: 0 2.5em;
   }
 
   .container__cta:hover,
@@ -326,7 +326,7 @@ footer {
 
   .container__error--icon {
     top: 17px;
-    right: 115px;
+    right: 105px;
   }
 
   .container__error--message {
